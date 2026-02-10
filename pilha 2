@@ -1,0 +1,14 @@
+fn main () {
+    let mut fila: Vec<i32> = Vec::new();
+    fila.push(10);
+    fila.push(20);
+    fila.push(30);
+    
+    println!("Fila inicial: {:?}", fila);
+    
+    println!("Fila apos remocao:{:?}",fila);
+    if !fila.is_empty() {
+        let valor = fila.remove(0);
+        println!("Removido da fila: {}",valor);
+    }
+ }
