@@ -1,0 +1,16 @@
+struct Livro{
+    titulo:String,
+    autor:String,
+    paginas: u16,
+}
+
+fn main(){
+   let livro = Livro
+   {
+       titulo: String::from("Como pegar 3 penaltis da Portuguesa"),
+       autor: String::from("Hugo Souza"),
+       paginas:5640,
+   };
+   
+   println!("{} foi escrtito por {} e tem {} paginas",livro.titulo,livro.autor,livro.paginas);
+   }
