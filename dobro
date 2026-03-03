@@ -1,0 +1,6 @@
+fn dobro(numero: i32){
+    println!("O dobro de {} é {}", numero, numero * 2);
+}
+fn main(){
+    dobro(5);
+}
