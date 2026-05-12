@@ -1,0 +1,10 @@
+use std::thread;
+
+fn main() {
+    let t = thread::spawn(||{
+        println!("Executando na thread secundaria");
+    });
+    println!("Executando na thread principal");
+    t.join().unwrap();
+    println!("Fim do programa");
+}
